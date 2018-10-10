@@ -1,14 +1,16 @@
 <html lang="en"><head>
     <meta charset="UTF-8">
     <title>Praks 7</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet"  href="style.css">
 </head>
-    <body>
+    <body class="container">
         <h1>Kaalu teisendamine</h1>
         <form action="">
             <input type="number" placeholder="Sisesta kaal kilogrammides..." id="kgInput" min="0">
         </form>
         <table id='output'>
-            <tr>
+            <tr class=alloutputs>
                <td>Grammid</td>
                 <td id="gramOutput"></td>
             </tr>
@@ -21,6 +23,9 @@
                 <td id='ozOutput'></td>
             </tr>
         </table>
+        
+        <button id="nightToggle">Night Mode</button>
+        
         <script src="main.js"></script>
     </body>
 </html> 
