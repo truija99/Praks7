@@ -12,10 +12,10 @@ output.style.visibility = 'hidden';
 kgInput.addEventListener('input', event => {
     let kg = event.target.value;
  
-    output.style.visibility = (kg === '0') ? 'hidden' : 'visible'; 
+    output.style.visibility = (kg === '0') ? 'hidden' : 'visible';  /* saab lühemalt if else lause kirjutada */
 
      gramOutput.innerHTML = `${kg * 1000} g`;
-     poundOutput.innerHTML = `${kg * 2.20462262} lb`;
-     ozOutput.innerHTML = `${kg * 35.2739619} oz`;
+     poundOutput.innerHTML = `${(kg * 2.20462262).toFixed(2)} lb`;
+     ozOutput.innerHTML = `${(kg * 35.2739619).toFixed(2)} oz`; /* toFixed - saab komakohtasid ümardada pmst*/ 
 }); 
 
